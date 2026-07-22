@@ -1,0 +1,11 @@
+{
+  "id": "conv-1784090564401-v0vnzy835",
+  "providerId": "claude",
+  "title": "Hey claude can you see my account",
+  "titleGenerationStatus": "failed",
+  "createdAt": 1784090564413,
+  "updatedAt": 1784090745172,
+  "lastResponseAt": 1784090564480,
+  "sessionId": null,
+  "selectedModel": "haiku"
+}
