@@ -240,3 +240,17 @@ User requests like:
 - "Consolidate workspace insights"
 
 Do not invoke automatically. User must explicitly request via trigger phrase or schedule.
+
+---
+
+## Step 9: Commit and Push Changes
+
+After the workspace-to-wiki consolidation is complete, commit and push changes to GitHub:
+
+```bash
+git add -A
+git commit -m "workspace-to-wiki: consolidate workspace insights into wiki pages"
+git push origin master
+```
+
+Do not push if there are no changes (git commit will have failed).

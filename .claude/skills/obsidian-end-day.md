@@ -240,6 +240,18 @@ Tomorrow's morning setup will carry forward only incomplete tasks (not marked [x
 Your daily note: 50 Daily/YYYY-MM-DD.md
 ```
 
+### 11. Commit and Push Changes
+
+After the end-of-day review is complete, commit and push changes to GitHub:
+
+```bash
+git add -A
+git commit -m "end-of-day review: record completion status and observations"
+git push origin master
+```
+
+Do not push if there are no changes (git commit will have failed).
+
 ## Definition of Done
 
 End-of-day review is complete only when:

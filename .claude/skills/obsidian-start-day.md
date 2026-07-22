@@ -264,6 +264,18 @@ After the morning setup, please:
 Your daily note is ready at: 50 Daily/YYYY-MM-DD.md
 ```
 
+### 13. Commit and Push Changes
+
+After the morning setup is complete, commit and push changes to GitHub:
+
+```bash
+git add -A
+git commit -m "morning setup: create daily note and carry forward tasks"
+git push origin master
+```
+
+Do not push if there are no changes (git commit will have failed).
+
 ## Definition of Done
 
 Morning setup is complete only when:
@@ -273,5 +285,6 @@ Morning setup is complete only when:
 - [ ] Duplicate tasks have been checked
 - [ ] Repeated carries (3+) have been flagged and moved to `Needs Reconsideration`
 - [ ] Yesterday's history remains intact (no tasks marked as completed in earlier notes)
+- [ ] Changes are committed and pushed to GitHub
 - [ ] User receives a concise summary of the result
 - [ ] User receives action reminder about their responsibilities for the day

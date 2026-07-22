@@ -422,3 +422,16 @@ Weekly connection review is complete only when:
 - [ ] index.md has been updated if materially necessary
 - [ ] log.md has been updated with a connection-review entry
 - [ ] User receives a comprehensive report with all files modified listed
+- [ ] Changes are committed and pushed to GitHub
+
+### 20. Commit and Push Changes
+
+After the weekly connection review is complete, commit and push changes to GitHub:
+
+```bash
+git add -A
+git commit -m "weekly connections: identify conceptual connections across notes"
+git push origin master
+```
+
+Do not push if there are no changes (git commit will have failed).

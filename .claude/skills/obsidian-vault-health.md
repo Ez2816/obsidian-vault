@@ -593,3 +593,16 @@ Vault health check is complete only when:
 - [ ] Substantial changes are in AI Review Queue
 - [ ] log.md has been updated with a lint entry
 - [ ] User receives a prioritized health report with all files listed
+- [ ] Changes are committed and pushed to GitHub
+
+### 21. Commit and Push Changes
+
+After the vault health check is complete, commit and push changes to GitHub:
+
+```bash
+git add -A
+git commit -m "vault health check: audit and log findings"
+git push origin master
+```
+
+Do not push if there are no changes (git commit will have failed).
