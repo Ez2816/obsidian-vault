@@ -21,11 +21,17 @@ User says things like:
 
 ## Workflow
 
-### 1. Read Today's Daily Note
+### 1. Determine Today's Date
+
+Determine the current date in `America/Vancouver` timezone using YYYY-MM-DD format.
+
+**CRITICAL**: All dates must be calculated in Pacific time, not UTC. This prevents the skill from trying to access tomorrow's notebook when running after midnight UTC.
+
+### 2. Read Today's Daily Note
 
 Locate and read today's daily note: `50 Daily/YYYY-MM-DD.md`
 
-### 2. Count and Summarize Completed Work
+### 3. Count and Summarize Completed Work
 
 Count tasks marked as completed (`- [x]`).
 
@@ -43,7 +49,7 @@ Do NOT include:
 - Comparison to a "should" baseline
 - Guilt framing
 
-### 3. Identify Unfinished Tasks and Blockers
+### 4. Identify Unfinished Tasks and Blockers
 
 List unfinished tasks (`- [ ]`) that remain in the note.
 
@@ -54,7 +60,7 @@ Identify tasks with blockers:
 - Resource constraints
 - Unclear next steps
 
-### 4. Suggest Task Improvements
+### 5. Suggest Task Improvements
 
 For unfinished tasks, suggest whether they should be:
 
@@ -67,7 +73,7 @@ For unfinished tasks, suggest whether they should be:
 
 Suggest only—do not modify the tasks.
 
-### 5. Identify Lasting Knowledge
+### 6. Identify Lasting Knowledge
 
 Scan today's note for information that belongs in the permanent vault:
 
@@ -79,7 +85,7 @@ Scan today's note for information that belongs in the permanent vault:
 - Changes in career direction or personal judgment
 - Resolved questions or confirmed preferences
 
-### 6. Suggest Preservation Locations
+### 7. Suggest Preservation Locations
 
 For each lasting piece of knowledge, suggest where it should be stored:
 
@@ -91,7 +97,7 @@ For each lasting piece of knowledge, suggest where it should be stored:
 
 Do NOT actually move or copy information—only suggest.
 
-### 7. Check for Personal Note Changes
+### 8. Check for Personal Note Changes
 
 If today's work suggests a change to a Personal note (e.g., a decision, preference, or goal update):
 
@@ -103,7 +109,7 @@ If today's work suggests a change to a Personal note (e.g., a decision, preferen
   - Why (evidence from today's work)
   - Confidence level (certain / likely / tentative)
 
-### 8. Perform Lightweight Daily Health Checks
+### 9. Perform Lightweight Daily Health Checks
 
 Check for only these issues:
 
@@ -140,7 +146,7 @@ Check for only these issues:
 
 Do NOT perform a complete vault-wide audit. Focus only on today's changes.
 
-### 9. Do Not Carry Forward
+### 10. Do Not Carry Forward
 
 Do NOT move unfinished tasks into tomorrow's note.
 
@@ -148,7 +154,7 @@ The morning skill (`obsidian-start-day`) handles task carryover.
 
 Unfinished tasks remain in today's note as a historical record.
 
-### 10. Add End-of-Day Reflection
+### 11. Add End-of-Day Reflection
 
 Add a concise summary to the `End-of-Day Reflection` section:
 
@@ -240,7 +246,7 @@ Tomorrow's morning setup will carry forward only incomplete tasks (not marked [x
 Your daily note: 50 Daily/YYYY-MM-DD.md
 ```
 
-### 11. Commit and Push Changes
+### 12. Commit and Push Changes
 
 After the end-of-day review is complete, commit and push changes to GitHub:
 
